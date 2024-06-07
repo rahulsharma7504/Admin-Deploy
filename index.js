@@ -20,7 +20,10 @@ const app = express();
 app.use(express.json());
 
 app.use(morgan('dev'));
-app.use(cors()); 
+app.use(cors({
+  origin: 'https://admin-deploy-jx0j.onrender.com', // e.g., 'https://your-frontend.onrender.com'
+  credentials: true
+})); 
  
 // For userRoutes
 const userRoute = require('./Routes/UserRoute');
@@ -33,7 +36,7 @@ app.use('/admin', adminRoute);
 app.use(express.static(path.join(__dirname, './admin-panel/build')));
 
 app.get('*', (req, res) => { 
-  res.sendFile(path.join(__dirname, './admin-panel/build', 'index.html'));
+  res.sendFile(path.join(__dirname, './admin-panel/build/index.html'));
 });
 const PORT = process.env.PORT || 3000; // Use PORT from environment variable if available, otherwise default to 3000
 
