@@ -36,7 +36,7 @@ const UpdateUser = () => {
     },[])
 
     const getUserData=async()=>{
-        const res=await axios.get(`http://localhost:4000/users/update-user/${id}`)
+        const res=await axios.get(`${BaseURL}/users/update-user/${id}`)
         console.log( res.data)
         setUserData(res.data)
         
