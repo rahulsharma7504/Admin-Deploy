@@ -1,0 +1,149 @@
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #dad9d8;
+  position: relative; /* To position the pseudo-element */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+  position: relative; /* To position the pseudo-element */
+  animation: slideIn 0.5s ease; /* Add animation to form group */
+}
+
+.form-control {
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid #848678a1;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.form-control:focus {
+  border-color: #071b0b;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1); /* Added focus box shadow */
+}
+
+label {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Added hover effect */
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* Optional: Styling for file input */
+input[type="file"] {
+  border: none;
+  padding: 8px;
+  background-color: #647381;
+}
+
+
+/* Optional: Center alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Optional: Adjust form layout for small screens */
+@media (max-width: 576px) {
+  .col-md-6 {
+      width: 100%;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover Effects */
+button:hover {
+  animation: pulse 0.5s ease; /* Add pulse animation on hover */
+}
+
+/* Before Pseudo-element */
+.form-group::before {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-group:hover::before {
+  opacity: 1;
+}
+
+/* Box Shadow Effect */
+.form-control {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Transform Property */
+/* .form-group:hover {
+  transform: scale(1.02);
+} */
+
+/* Add more animations and effects */
+/* .form-control:focus {
+  animation: pulse 0.5s ease; 
+} */
+
+.form-group:hover .form-control {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-group:hover label {
+  color: #007bff;
+}

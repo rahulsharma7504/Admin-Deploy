@@ -1,0 +1,57 @@
+      <button className='btn btn-primary float-right' onClick={()=>handleUpdate(val._id)}>Update user</button>
+ const handleUpdate=(id)=>{
+    navigate(`/admin/update/${id}`)
+
+  }
+
+
+
+
+
+
+
+  show user
+
+  <>
+  {users.map((val, index) => (
+  <div className="Dcontainer" key={index}>
+    <div className="Dcolumn">
+      <h2>User  {index + 1}</h2> {/* Add index + 1 to start numbering from 1 */}
+      <img src={val.userPhoto} alt="User" className="Dprofile-photo" />
+      <h4>{val.name}</h4>
+      <p><b>Email</b>: {val.email}</p>
+      <p><b>Mobile</b>: {val.mobile}</p>
+      <p><b>DOB</b> {val.DOB}</p>
+      <p><b>Address</b> {val.address}</p>
+      <p><b>City</b> {val.city}</p>
+      <p><b>Occupation</b> {val.occupation}</p>
+      <p><b>Status</b> <u>{val.status}</u></p>
+      <p><b>Last-Login</b> : {moment(val.lastLogin).format('MMMM Do YYYY, h:mm a')}</p>
+      <hr />
+      <h4>Spouse Details</h4>
+      <img src={val.spousePhoto} alt="Spouse" className="Dprofile-photo" />
+      <div className='d-flex ml-5'>
+      <p>Spouse Name: {val.spouseName}</p>
+
+      </div>
+     
+    </div>
+
+    <div className="Dcolumn">
+      <h2>Business Details</h2>
+      <p>Business Name: {val.businessName}</p>
+      <p>Business Email: {val.businessEmail}</p>
+      <p>Business Phone: {val.businessPhone}</p>
+      <p>Business Address: {val.businessAddress}</p>
+      <p>Classification: {val.classification}</p>
+      <p>Club Name: {val.clubName}</p>
+      <p>Membership ID: {val.membershipID}</p>
+    </div>
+    <hr style={{width: '100%'}} /> {/* Horizontal line */}
+    
+  </div>
+))}
+
+
+
+    </>

@@ -1,0 +1,89 @@
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to bottom right, #343a40, #2e343b);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #cfd8dc;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+    transition-duration: 0.8s;
+
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    transition-duration: 0.8s;
+
+  }
+  
+  .nav-item {
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    transition-duration: 0.8s;
+
+  }
+  
+  .nav-link {
+    transition-duration: 0.8s;
+
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-menu {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom right, #343a40, #2e343b);
+    transition-duration: 0.8s;
+
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    transition-duration: 0.8s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+  
+    .nav-item {
+      margin: 0 0.25rem;
+    }
+  
+    .nav-link {
+      padding: 0.25rem 0.5rem;
+    }
+  
+    .dropdown-item {
+      padding: 0.25rem 0.5rem;
+    }
+  }

@@ -1,0 +1,105 @@
+.card-container {
+  position: relative;
+  width: 70%;
+  max-width: 9  00px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.image-container {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.2);
+}
+
+.image-caption {
+  margin-top: 13px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.additional-info-container {
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  color: black;
+  margin-top: 90px;
+} 
+
+.additional-info {
+  font-size: 14px;
+  color: #666;
+  margin: 2px 0;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-body {
+  flex: 1;
+  padding: 20px;
+}
+
+.personal-details {
+  margin-right: 10px;
+}
+
+.business-details {
+  margin-left: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .card {
+      padding: 10px;
+  }
+  .card-body {
+      padding: 10px;
+  }
+  .profile-photo {
+      width: 80px;
+      height: 80px;
+  }
+  .image-caption, .additional-info {
+      font-size: 12px;
+  }
+  .details-container {
+      flex-direction: column;
+  }
+  .personal-details, .business-details {
+      margin: 0;
+  }
+}

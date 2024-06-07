@@ -1,0 +1,317 @@
+/* General Container Styles */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Birthbox Styles */
+.birthbox {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.cardrow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/* Card Styles */
+
+.card {
+  position: relative;
+  right: 10px;
+  width: 45rem;
+  height: 50rem;
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.StaticCard{
+  position: relative;
+  width: 13rem;
+  height: 25rem;
+  right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.userData {
+  position: relative;
+  width: 50rem;
+  right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  padding: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+/* Circular Image Styles */
+.img-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure it's a block element for centering */
+}
+
+
+
+.static-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure it's a block element for centering */
+}
+
+.static-img-large {
+  width: 150px; /* Increase the width for the first card image */
+  height: 150px; /* Increase the height for the first card image */
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure it's a block element for centering */
+}
+
+/* Input Wrapper Styles */
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+
+
+
+
+.tables th:hover {
+  background-color: #3b3939;
+}
+
+.tables tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tables a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.tables a:hover {
+  text-decoration: underline;
+}
+
+/* Pagination Styles */
+.pagination-btn-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.pagination-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination-btn.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .col-md-4, .col-lg-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .offset-md-2 {
+    margin-left: 0;
+  }
+
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .offset-md-8 {
+    margin-left: 0;
+  }
+
+  .col-md-10 {
+    width: 100%;
+  }
+
+  .offset-md-1 {
+    margin-left: 3.5rem;
+  }
+  .StaticCard{
+    position: relative;
+    width: 13rem;
+    height: 40rem;
+    margin-right: 22px;
+    right: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+}
+@media (max-width: 576px) {
+
+ .offset-md-1 {
+    margin-left: 1.5rem;
+  }
+ 
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .input {
+    padding: 4px;
+  }
+
+ 
+
+  .pagination-btn {
+    padding: 6px 12px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.birthdaycard {
+  position: relative; /* Ensure the card is the reference point for absolute positioning */
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.birthdaycard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper {
+  position: absolute;
+  top: -25px; /* Adjust this value to control how much of the image is outside the card */
+  right: 2px; /* Adjust this value to control how much of the image is outside the card */
+  display: flex;
+  gap: 10px; /* Space between the images */
+}
+
+.circular-image {
+  width: 65px; /* Adjust the size as needed */
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  border: 2px solid white; /* Optional: Add a border to the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .circular-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .image-wrapper {
+    top: -20px; /* Adjust the position for smaller screens */
+    right: -20px; /* Adjust the position for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .circular-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .image-wrapper {
+    top: -15px; /* Adjust the position for smaller screens */
+    right: -15px; /* Adjust the position for smaller screens */
+  }
+}
+
+
